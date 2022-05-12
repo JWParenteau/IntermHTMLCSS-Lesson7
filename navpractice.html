@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nav Practice</title>
+    <style type="text/css">
+      /* Make HTML5 layout elements block elements for older browsers */
+      header,
+      nav,
+      aside,
+      article,
+      footer,
+      section {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      //Make older browsers aware of new HTML5 layout tags
+      "header nav aside article footer section".replace(/\w+/g, function (n) {
+        document.createElement(n);
+      });
+    </script>
+    <!-- Navigation bar -->
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Contact Us</a>
+    </nav>
+  </body>
+</html>
