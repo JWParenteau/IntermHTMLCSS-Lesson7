@@ -12,6 +12,37 @@
       section {
         display: block;
       }
+      /* Style for <a> tags in the nav section */
+      nav a {
+        background-color: gray;
+        color: white;
+        text-decoration: none;
+        outline: none;
+        padding: 10px 0;
+        display: block;
+        float: left;
+        border-right: solid 1px silver;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        width: 20%;
+        text-align: center;
+        box-sizing: border-box;
+        /* Box sizing for older browsers */
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+      }
+      /* Unvisited and visited link styling */
+      nav a:link,
+      nav a:visited {
+        background-color: gray;
+        color: white;
+      }
+      /* Styling for hover and tap */
+      nav a:hover,
+      nav a:active {
+        background-color: silver;
+        color: black;
+      }
     </style>
   </head>
   <body>
