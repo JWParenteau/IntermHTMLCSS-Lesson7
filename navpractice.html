@@ -14,7 +14,8 @@
       }
       /* Style for <a> tags in the nav section */
       nav a {
-        background-color: gray;
+        background: url(pix2/navback.png) center repeat-x,
+          url(pix2/navhover.png) center repeat-x;
         color: white;
         text-decoration: none;
         outline: none;
@@ -34,13 +35,13 @@
       /* Unvisited and visited link styling */
       nav a:link,
       nav a:visited {
-        background-color: gray;
-        color: white;
+        background: url(pix2/navback.png);
       }
       /* Styling for hover and tap */
       nav a:hover,
-      nav a:active {
-        background-color: silver;
+      nav a:active,
+      nav a.currentpage {
+        background: url(pix2/navhover.png);
         color: black;
       }
     </style>
@@ -54,7 +55,7 @@
     </script>
     <!-- Navigation bar -->
     <nav>
-      <a href="#">Home</a>
+      <a href="#" class="currentpage">Home</a>
       <a href="#">Products</a>
       <a href="#">Services</a>
       <a href="#">About</a>
